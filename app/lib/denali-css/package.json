@@ -1,0 +1,74 @@
+{
+  "_from": "denali-css",
+  "_id": "denali-css@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-BgA0neG+fiGdgVZjKY67FBdpZqZC+NXzm0qbmdgx/+TnZdJ73B2iAyTjpAIr5cwdrk/UnLMR464Jcr9VF9eiMA==",
+  "_location": "/denali-css",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "denali-css",
+    "name": "denali-css",
+    "escapedName": "denali-css",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/denali-css/-/denali-css-2.2.0.tgz",
+  "_shasum": "ac0a408047fbfc5f04662be75b1e9de437bc7fb7",
+  "_spec": "denali-css",
+  "_where": "C:\\Users\\Diego\\Documents\\personal-project\\myday2",
+  "author": {
+    "name": "Chas Turansky"
+  },
+  "bugs": {
+    "url": "https://github.com/denali-design/denali-css/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Denali CSS Framework",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-actions": "^6.1.10",
+    "@storybook/addon-essentials": "^6.1.10",
+    "@storybook/addon-links": "^6.1.10",
+    "@storybook/html": "^6.1.10",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "mocha": "^7.2.0",
+    "react-is": "^16.13.1"
+  },
+  "homepage": "https://github.com/denali-design/denali-css#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "denali-css",
+  "private": false,
+  "release": {
+    "debug": false,
+    "verifyConditions": {
+      "path": "./node_modules/semantic-release/src/lib/plugin-noop.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/denali-design/denali-css.git"
+  },
+  "scripts": {
+    "build-storybook": "build-storybook -o ./docs-storybook",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "start": "gulp serve",
+    "storybook": "start-storybook -p 6006",
+    "test": "mocha"
+  },
+  "version": "2.2.0"
+}

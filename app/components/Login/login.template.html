@@ -1,0 +1,54 @@
+<div class="image1Background fullHeight">
+ <section class="isFlex isFlexCentered formRowContainer">
+  <section class="isFlexColumn formContainer">
+   <section class="formTittle isFlex">
+   <h3 class="isWhite">{{toDisplay}}</h3>
+   </section>
+   <section class="inputs-container isFlex isFlexColumn isSpaceBetween ">
+       <section class="isFlex isFlexColumn hasRowGap isSpaceAround inputs-form-container">
+           <div class="input isFullWidth">
+               <input class="isFullWidth" type="text" placeholder="Email" />
+           </div>
+           <div class="input isFullWidth">
+               <input class="isFullWidth" type="password" placeholder="Password" />
+           </div>
+       </section>
+        <div class="isFullWidth isFlex isFlexColumn hasRowGap">
+            <primary-button button-text="Login" do-something="$ctrl.loginFunction()" ></primary-button>
+            <secondary-button button-text="I don't have an account" do-something="$ctrl.loginFunction()"></secondary-button>
+            <danger-button button-text="wasa" do-something="$ctrl.loginFunction()"></danger-button>
+        </div>
+   </section>
+  </section>
+ </section>
+</div>
+<style>
+ .formRowContainer {
+  padding-top: 10%;
+ }
+
+ .formContainer {
+  height: 50vh;
+  width: 60vh;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 30px white;
+ }
+
+ .formTittle {
+  padding: 1em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #264be7;
+  color: white;
+  align-items: center;
+ }
+ .inputs-container {
+  padding: 1em;
+  height: calc(50vh - 4em);
+ }
+
+ .inputs-form-container {
+     ;
+ }
+</style>

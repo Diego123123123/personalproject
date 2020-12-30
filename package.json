@@ -1,0 +1,23 @@
+{
+  "name": "myday2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./app -a localhost -p 8000",
+    "prestart": "cpx \"node_modules/{angular,angular-*,denali-css}/**/*\" app/lib -C",
+    "check": "eslint app/**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "1.8.2",
+    "angular-route": "^1.8.2",
+    "cpx": "^1.5.0",
+    "denali-css": "^2.2.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-angularjs-upgrade": "0.0.2",
+    "http-server": "^0.12.3"
+  }
+}
